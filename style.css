@@ -1,0 +1,27 @@
+.customNav{
+    height: 80px;
+    align-items: center;
+}
+.nav-item {
+    display: flex;
+  }
+  
+  .nav-link {
+    flex-grow: 1;
+    text-align: center; /* or left/right based on your design */
+    white-space: nowrap;
+  }
+
+  .navLabel{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .logoLabel{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+  }
+  
