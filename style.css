@@ -8,20 +8,26 @@
   
   .nav-link {
     flex-grow: 1;
-    text-align: center; /* or left/right based on your design */
+    text-align: center; 
     white-space: nowrap;
   }
 
   .navLabel{
-    color: rgb(255, 255, 255);
+    color: rgb(36, 35, 35);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    flex-grow: 1;
+    text-align: center; 
+    white-space: nowrap;
     
   }
   .logoLabel{
-    color: rgb(255, 255, 255);
+    color: rgb(36, 35, 35);
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 20px;
+  }
+  .navbar{
+    border-bottom: 1px solid rgb(32, 32, 32);
   }
   
