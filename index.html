@@ -10,25 +10,29 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- 
   </head>
   <body>
     <div class="">
       <nav class="navbar navbar-expand-sm bg-white navbar-dark">
         <div class="row w-100 customNav">
           <div class="col d-flex align-items-center">
-            <img src="./img/headIcon.png" alt="Los Angeles" class="customslide" style="height: 50px; width: 50px; margin-left: 10px;">
+            <img
+              src="./img/headIcon.png"
+              alt="Los Angeles"
+              class="customslide"
+              style="height: 50px; width: 50px; margin-left: 10px"
+            />
             <a class="navbar-brand logoLabel" href="#">CHOW</a>
           </div>
-          
-          <div class="col" >
+
+          <div class="col">
             <ul class="navbar-nav">
               <li class="nav-item w-100">
                 <a class="navLabel" href="#home">Home</a>
               </li>
-              <li class="nav-item w-100">
+              <!-- <li class="nav-item w-100">
                 <a class="navLabel" href="#demos">Demos</a>
-              </li>
+              </li> -->
               <li class="nav-item w-100">
                 <a class="navLabel" href="#recipe">Recipe</a>
               </li>
@@ -47,43 +51,188 @@
       </nav>
     </div>
     <div id="home" class="vh-100">
-      <div id="demo" class="carousel slide" style="padding: 15px;" data-bs-ride="carousel">
-
+      <div
+        id="demo"
+        class="carousel slide"
+        style="padding: 15px"
+        data-bs-ride="carousel"
+      >
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
         </div>
-        
+
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active 70-vh">
-            <img src="./img/crsl1.jpeg" alt="Los Angeles" class="d-block customslide" style="width:100%">
+            <img
+              src="./img/crsl1.jpg"
+              alt="Los Angeles"
+              class="d-block customslide"
+              style="width: 100%"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/crsl2.jpeg" alt="Chicago" class="d-block customslide" style="width:100%">
+            <img
+              src="./img/crsl2.jpeg"
+              alt="Chicago"
+              class="d-block customslide"
+              style="width: 100%"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/crsl3.jpeg" alt="New York" class="d-block customslide" style="width:100%">
+            <img
+              src="./img/crsl3.jpeg"
+              alt="New York"
+              class="d-block customslide"
+              style="width: 100%"
+            />
           </div>
         </div>
-        
+
         <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
-      
     </div>
-    <div id="demos" class="vh-100"><p class="bg-primary">Demos</p></div>
-    <div id="recipe" class="vh-100"><p class="bg-primary">Recipe</p></div>
+    <!-- <div id="demos" class="vh-100"><p class="bg-primary">Demos</p></div> -->
+    <div id="recipe" class="">
+      <div class="containerShop">
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80"
+            />
+          </div>
+          <div class="card-text">
+            <p class="card-meal-type">Breakfast/Eggs</p>
+            <h2 class="card-title">Délicieux Bénédicte</h2>
+            <p class="card-body">
+              Eggs Benedict with hollandaise sauce, crispy bacon and an
+              assortment of garden herbs.
+            </p>
+          </div>
+          <div class="card-price">$56</div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80"
+            />
+          </div>
+          <div class="card-text">
+            <p class="card-meal-type">Lunch/Meat</p>
+            <h2 class="card-title">Du bœuf Burger</h2>
+            <p class="card-body">
+              A beef burger with wholewheat patty, juicy lettuce and a side of
+              gluten free fries
+            </p>
+          </div>
+          <div class="card-price">$39</div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80"
+            />
+          </div>
+          <div class="card-text">
+            <p class="card-meal-type">Soups/Meat</p>
+            <h2 class="card-title">Soupe à l’oignon</h2>
+            <p class="card-body">
+              The traditional French soup made with onions and beef with a
+              dollop of garlic and saffaron mayonise.
+            </p>
+          </div>
+          <div class="card-price">$69</div>
+        </div>
+      </div>
+    </div>
     <div id="pages" class="vh-100"><p class="bg-primary">Pages</p></div>
-    <div id="shop" class="vh-100"><p class="bg-primary">Shop</p></div>
+    <div id="shop" class="">
+      <div class="shopBody">
+        <div class="containerShop2">
+          <div class="product-details">
+            <h1>Biru Putaran</h1>
+
+            <span class="hint-star star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+
+            <p class="information">
+              " Especially good for container gardening, the Angelonia will keep
+              blooming all summer even if old flowers are removed. Once tall
+              enough to cut, bring them inside and you'll notice a light scent
+              that some say is reminiscent of apples. "
+            </p>
+
+            <div class="control">
+              <button class="btn">
+                <span class="price">49 $</span>
+
+                <span class="shopping-cart"
+                  ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                ></span>
+
+                <span class="buy">Buy Now</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product-image">
+            <img
+              src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg"
+              alt="Omar Dsoky"
+            />
+
+            <div class="info">
+              <h2>The Description</h2>
+              <ul>
+                <li><strong>Sun Needs: </strong>Full Sun</li>
+                <li><strong>Soil Needs: </strong>Damp</li>
+                <li><strong>Zones: </strong>9 - 11</li>
+                <li><strong>Height: </strong>2 - 3 feet</li>
+                <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+                <li><strong>Features: </strong>Tolerates heat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="form" class="vh-100"><p class="bg-primary">Submit Recipe</p></div>
-   
   </body>
 </html>
