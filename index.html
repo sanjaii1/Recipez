@@ -12,8 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="" style="background-color: #fbb72c; padding: 12px; ">
-      <nav class="navbar navbar-expand-sm  navbar-dark" style="border: 2px solid black;">
+    <div class="" style="background-color: #fbb72c; padding: 12px">
+      <nav
+        class="navbar navbar-expand-sm navbar-dark"
+        style="border: 2px solid black"
+      >
         <div class="row w-100 customNav">
           <div class="col d-flex align-items-center">
             <img
@@ -26,71 +29,147 @@
           </div>
 
           <div class="col">
-            <ul class="navbar-nav">
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#home">Home</a>
+            <ul class="navbar-nav" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link navLabel" data-bs-toggle="tab" href="#home"
+                  >Home</a
+                >
               </li>
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#recipe">Recipe</a>
+              <li class="nav-item">
+                <a class="nav-link navLabel" data-bs-toggle="tab" href="#recipe"
+                  >Recipe</a
+                >
               </li>
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#about">About</a>
+              <li class="nav-item">
+                <a class="nav-link navLabel" data-bs-toggle="tab" href="#about"
+                  >About</a
+                >
               </li>
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#gallery">Gallery</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link navLabel"
+                  data-bs-toggle="tab"
+                  href="#gallery"
+                  >Gallery</a
+                >
               </li>
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#shop">Shop</a>
+              <li class="nav-item">
+                <a class="nav-link navLabel" data-bs-toggle="tab" href="#shop"
+                  >Shop</a
+                >
               </li>
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#events">Events</a>
+              <li class="nav-item">
+                <a class="nav-link navLabel" data-bs-toggle="tab" href="#events"
+                  >Events</a
+                >
               </li>
-              <li class="nav-item w-100">
-                <a class="navLabel" href="#contact">Contact Us</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link navLabel"
+                  data-bs-toggle="tab"
+                  href="#contact"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <div id="home" class="vh-100">
-      <div
-        id="demo"
-        class="carousel slide"
-        style="padding: 15px"
-        data-bs-ride="carousel"
-      >
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
 
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active 70-vh">
-            <img
-              src="./img/crsl1.jpg"
-              alt="Los Angeles"
-              class="d-block customslide"
-              style="width: 100%"
-            />
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade show active vh-100">
+        <div
+          id="demo"
+          class="carousel slide"
+          style="padding: 15px"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="2"
+            ></button>
           </div>
-          <div class="carousel-item">
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/crsl1.jpg"
+                alt="Los Angeles"
+                class="d-block customslide"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/crsl2.jpeg"
+                alt="Chicago"
+                class="d-block customslide"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/crsl3.jpeg"
+                alt="New York"
+                class="d-block customslide"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="descr">
+          <div class="desPara">
+            <p>
+              Colletta, which means “collection” in Italian, is just that – a
+              compilation of lively dining experiences. Colletta celebrates the
+              best of Italian American dishes with welcoming hospitality and
+              service. Seasonal changes guide the menu of scratch-made pasta
+              made in-house daily, cheeses, antipastis, pizzas and more. Staying
+              true to Italian dining traditions, Colletta also offers a “For the
+              Table” dining option curated for a family-style experience,
+              offered nightly alongside the full à la carte menu.
+            </p>
+          </div>
+          <div class="desbtn">
+            <button type="button" class="btnDess">Learn More</button>
+          </div>
+        </div>
+        <div class="photodes container">
+          <div class="col">
             <img
               src="./img/crsl2.jpeg"
               alt="Chicago"
@@ -98,110 +177,135 @@
               style="width: 100%"
             />
           </div>
-          <div class="carousel-item">
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+              explicabo nemo doloremque voluptas earum incidunt pariatur ab
+              nesciunt! Molestias similique fuga asperiores provident
+              consequatur esse consectetur recusandae saepe perspiciatis harum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+              totam debitis expedita ullam cumque saepe animi necessitatibus
+              quia amet optio excepturi consectetur ea, quas ratione distinctio
+              quidem fuga a quo?
+            </p>
+          </div>
+        </div>
+        <div class="photodes container">
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+              explicabo nemo doloremque voluptas earum incidunt pariatur ab
+              nesciunt! Molestias similique fuga asperiores provident
+              consequatur esse consectetur recusandae saepe perspiciatis harum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+              totam debitis expedita ullam cumque saepe animi necessitatibus
+              quia amet optio excepturi consectetur ea, quas ratione distinctio
+              quidem fuga a quo?
+            </p>
+          </div>
+          <div class="col">
             <img
-              src="./img/crsl3.jpeg"
-              alt="New York"
+              src="./img/crsl2.jpeg"
+              alt="Chicago"
               class="d-block customslide"
               style="width: 100%"
             />
           </div>
         </div>
-
-        <!-- Left and right controls/icons -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-    </div>
-    <!-- <div id="demos" class="vh-100"><p class="bg-primary">Demos</p></div> -->
-    <div id="recipe" class="">
-      <div class="containerShop">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80"
-            />
+      <div id="recipe" class="tab-pane vh-100">
+        <div class="containerShop">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80"
+              />
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Breakfast/Eggs</p>
+              <h2 class="card-title">Délicieux Bénédicte</h2>
+              <p class="card-body">
+                Eggs Benedict with hollandaise sauce, crispy bacon and an
+                assortment of garden herbs.
+              </p>
+            </div>
+            <div class="card-price">$56</div>
           </div>
-          <div class="card-text">
-            <p class="card-meal-type">Breakfast/Eggs</p>
-            <h2 class="card-title">Délicieux Bénédicte</h2>
-            <p class="card-body">
-              Eggs Benedict with hollandaise sauce, crispy bacon and an
-              assortment of garden herbs.
-            </p>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80"
+              />
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Lunch/Meat</p>
+              <h2 class="card-title">Du bœuf Burger</h2>
+              <p class="card-body">
+                A beef burger with wholewheat patty, juicy lettuce and a side of
+                gluten free fries
+              </p>
+            </div>
+            <div class="card-price">$39</div>
           </div>
-          <div class="card-price">$56</div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80"
-            />
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80"
+              />
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Soups/Meat</p>
+              <h2 class="card-title">Soupe à l’oignon</h2>
+              <p class="card-body">
+                The traditional French soup made with onions and beef with a
+                dollop of garlic and saffron mayonnaise.
+              </p>
+            </div>
+            <div class="card-price">$69</div>
           </div>
-          <div class="card-text">
-            <p class="card-meal-type">Lunch/Meat</p>
-            <h2 class="card-title">Du bœuf Burger</h2>
-            <p class="card-body">
-              A beef burger with wholewheat patty, juicy lettuce and a side of
-              gluten free fries
-            </p>
-          </div>
-          <div class="card-price">$39</div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80"
-            />
-          </div>
-          <div class="card-text">
-            <p class="card-meal-type">Soups/Meat</p>
-            <h2 class="card-title">Soupe à l’oignon</h2>
-            <p class="card-body">
-              The traditional French soup made with onions and beef with a
-              dollop of garlic and saffaron mayonise.
-            </p>
-          </div>
-          <div class="card-price">$69</div>
         </div>
       </div>
-    </div>
-    <div id="pages" class="vh-100"><p class="bg-primary">Pages</p></div>
-    <div id="shop" class="">
-      <p>shop here</p>
-      <div class="product-card">
-        <div class="badge">Hot</div>
-        <div class="product-tumb">
-          <img src="./img/prdct.jpeg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Women,bag</span>
-          <h4><a href="">Women leather bag</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$96.00</small>$230.99</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
+      <div id="about" class="tab-pane vh-100">
+        <p class="bg-primary">Pages</p>
+      </div>
+      <div id="gallery" class="tab-pane vh-100">
+        <p>shop here</p>
+        <div class="product-card">
+          <div class="badge">Hot</div>
+          <div class="product-tumb">
+            <img src="./img/prdct.jpeg" alt="" />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Women,bag</span>
+            <h4><a href="#">Women leather bag</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+              possimus nostrum!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$96.00</small>$230.99</div>
+              <div class="product-links">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="shop" class="tab-pane vh-100">
+        <p class="bg-primary">Submit Recipe</p>
+      </div>
+      <div id="events" class="tab-pane vh-100">
+        <p class="bg-primary">Submit Recipe</p>
+      </div>
+      <div id="contact" class="tab-pane vh-100">
+        <p class="bg-primary">
+          Submit Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ducimus dolorum similique nam eos maiores dicta ex quas natus
+          voluptate perspiciatis laborum voluptatem voluptatibus adipisci quis
+          eaque, minus dolorem ad autem. Recipe
+        </p>
+      </div>
     </div>
-    <div id="form" class="vh-100"><p class="bg-primary">Submit Recipe</p></div>
   </body>
 </html>

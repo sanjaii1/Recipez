@@ -42,7 +42,7 @@ body{
   }
   
 .customslide{
-height: 86vh;
+height: 60vh;
 }
 
 
@@ -236,4 +236,33 @@ a
 
 .product-links a:hover {
     color: #fbb72c;
+}
+.descr{
+  background-color: black;  
+  margin: 14px;
+  padding: 10px;
+border-top-right-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+.desPara {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 10px;
+}.desbtn{
+display: flex;
+justify-content: center;
+}.btnDess{
+  width: fit-content;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.photodes{
+  display: flex;
+  justify-content: center;
+  padding: 13px;
+  
 }
