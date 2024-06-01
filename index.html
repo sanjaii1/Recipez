@@ -34,45 +34,60 @@
           </div>
 
           <div class="col">
-            <ul class="navbar-nav" role="tablist">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link navLabel" data-bs-toggle="tab" href="#home"
+                <a
+                  class="nav-link navLabel"
+                  href="#home"
+                  onclick="showTab(event, 'home')"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link navLabel" data-bs-toggle="tab" href="#recipe"
+                <a
+                  class="nav-link navLabel"
+                  href="#recipe"
+                  onclick="showTab(event, 'recipe')"
                   >Recipe</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link navLabel" data-bs-toggle="tab" href="#about"
+                <a
+                  class="nav-link navLabel"
+                  href="#about"
+                  onclick="showTab(event, 'about')"
                   >About</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link navLabel"
-                  data-bs-toggle="tab"
                   href="#gallery"
+                  onclick="showTab(event, 'gallery')"
                   >Gallery</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link navLabel" data-bs-toggle="tab" href="#shop"
+                <a
+                  class="nav-link navLabel"
+                  href="#shop"
+                  onclick="showTab(event, 'shop')"
                   >Shop</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link navLabel" data-bs-toggle="tab" href="#events"
+                <a
+                  class="nav-link navLabel"
+                  href="#events"
+                  onclick="showTab(event, 'events')"
                   >Events</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link navLabel"
-                  data-bs-toggle="tab"
                   href="#contact"
+                  onclick="showTab(event, 'contact')"
                   >Contact Us</a
                 >
               </li>
@@ -182,7 +197,14 @@
               style="width: 100%; border-radius: 8px"
             />
           </div>
-          <div class="col" style="text-align:center; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          <div
+            class="col"
+            style="
+              text-align: center;
+              font-weight: 500;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            "
+          >
             <p>
               Savor the rich, creamy texture of our signature cheesecake,
               crafted with the finest ingredients and a hint of vanilla.
@@ -208,7 +230,14 @@
           </div>
         </div>
         <div class="photodes container">
-          <div class="col" style="text-align:center; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          <div
+            class="col"
+            style="
+              text-align: center;
+              font-weight: 500;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            "
+          >
             <p>
               Savor the rich, creamy texture of our signature cheesecake,
               crafted with the finest ingredients and a hint of vanilla.
@@ -337,5 +366,23 @@
         </p>
       </div>
     </div>
+
+    <script>
+      function showTab(event, tabId) {
+        event.preventDefault();
+        var tabContents = document.querySelectorAll(".tab-pane");
+        tabContents.forEach(function (tabContent) {
+          tabContent.classList.remove("show", "active");
+        });
+
+        var tabLinks = document.querySelectorAll(".nav-link");
+        tabLinks.forEach(function (tabLink) {
+          tabLink.classList.remove("active");
+        });
+
+        document.getElementById(tabId).classList.add("show", "active");
+        event.currentTarget.classList.add("active");
+      }
+    </script>
   </body>
 </html>
