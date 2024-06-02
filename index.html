@@ -46,19 +46,20 @@
               <li class="nav-item">
                 <a
                   class="nav-link navLabel"
-                  href="#recipe"
-                  onclick="showTab(event, 'recipe')"
-                  >Recipe</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link navLabel"
                   href="#about"
                   onclick="showTab(event, 'about')"
                   >About</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navLabel"
+                  href="#recipe"
+                  onclick="showTab(event, 'recipe')"
+                  >Recipe</a
+                >
+              </li>
+
               <li class="nav-item">
                 <a
                   class="nav-link navLabel"
@@ -272,7 +273,137 @@
           </div>
         </div>
       </div>
-      <div id="recipe" class="tab-pane vh-100">
+      <div id="about" class="tab-pane vh-100">
+        <div style="padding: 15px">
+          <div>
+            <img
+              src="./img/abotImgMain.jpg"
+              alt="Chicago"
+              style="width: 100%"
+            />
+            <p class="abthed">About</p>
+          </div>
+          <div class="abtPara">
+            <p class="abtParaSub">
+              Colletta (meaning “collection” in Italian), is a compilation of
+              lively dining experiences. Colletta celebrates the best of Italian
+              American dishes with welcoming hospitality and service. Seasonal
+              changes guide the menu of house-made pasta, antipasti, pizzas and
+              more. Staying true to Italian dining traditions, Colletta also
+              offers a “For the Table” chef-curated option for a family-style
+              experience, offered nightly alongside the full à la carte menu.
+            </p>
+          </div>
+          <div class="abtPara" style="gap: 10px">
+            <h1
+              style="
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-style: italic;
+              "
+            >
+              Our Team's
+            </h1>
+          </div>
+          <div class="abtPara">
+            <div>
+              <div class="gallerys">
+                <a target="_blank" href="./img/profile 1.jpg">
+                  <img
+                    src="./img/profile 1.jpg"
+                    alt="Cinque Terre"
+                    width="600"
+                    height="400"
+                  />
+                </a>
+                <div class="descs">Add a description of the image here</div>
+              </div>
+              <div class="gallerys">
+                <a target="_blank" href="./img/profile 1.jpg">
+                  <img
+                    src="./img/profile 1.jpg"
+                    alt="Cinque Terre"
+                    width="600"
+                    height="400"
+                  />
+                </a>
+                <div class="descs">Add a description of the image here</div>
+              </div>
+              <div class="gallerys">
+                <a target="_blank" href="./img/profile 1.jpg">
+                  <img
+                    src="./img/profile 1.jpg"
+                    alt="Cinque Terre"
+                    width="600"
+                    height="400"
+                  />
+                </a>
+                <div class="descs">Add a description of the image here</div>
+              </div>
+              <div class="gallerys">
+                <a target="_blank" href="./img/profile 1.jpg">
+                  <img
+                    src="./img/profile 1.jpg"
+                    alt="Cinque Terre"
+                    width="600"
+                    height="400"
+                  />
+                </a>
+                <div class="descs">Add a description of the image here</div>
+              </div>
+              <div class="gallerys">
+                <a target="_blank" href="./img/profile 1.jpg">
+                  <img
+                    src="./img/profile 1.jpg"
+                    alt="Cinque Terre"
+                    width="600"
+                    height="400"
+                  />
+                </a>
+                <div class="descs">Add a description of the image here</div>
+              </div>
+              <div class="gallerys">
+                <a target="_blank" href="./img/profile 1.jpg">
+                  <img
+                    src="./img/profile 1.jpg"
+                    alt="Cinque Terre"
+                    width="600"
+                    height="400"
+                  />
+                </a>
+                <div class="descs">Add a description of the image here</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="recipe" class="tab-pane vh-100">recipe</div>
+
+      <div id="gallery" class="tab-pane vh-100">
+        <p>shop here</p>
+        <div class="product-card">
+          <div class="badge">Hot</div>
+          <div class="product-tumb">
+            <img src="./img/prdct.jpeg" alt="" />
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Women,bag</span>
+            <h4><a href="#">Women leather bag</a></h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+              possimus nostrum!
+            </p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$96.00</small>$230.99</div>
+              <div class="product-links">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="shop" class="tab-pane vh-100">
         <div class="containerShop">
           <div class="card">
             <div class="card-image">
@@ -324,65 +455,63 @@
           </div>
         </div>
       </div>
-      <div id="about" class="tab-pane vh-100">
-        <p class="bg-primary">Pages</p>
-      </div>
-      <div id="gallery" class="tab-pane vh-100">
-        <p>shop here</p>
-        <div class="product-card">
-          <div class="badge">Hot</div>
-          <div class="product-tumb">
-            <img src="./img/prdct.jpeg" alt="" />
-          </div>
-          <div class="product-details">
-            <span class="product-catagory">Women,bag</span>
-            <h4><a href="#">Women leather bag</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-              possimus nostrum!
-            </p>
-            <div class="product-bottom-details">
-              <div class="product-price"><small>$96.00</small>$230.99</div>
-              <div class="product-links">
-                <a href="#"><i class="fa fa-heart"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="shop" class="tab-pane vh-100">
-        <p class="bg-primary">Submit Recipe</p>
-      </div>
       <div id="events" class="tab-pane vh-100">
         <p class="bg-primary">Submit Recipe</p>
       </div>
       <div id="contact" class="tab-pane vh-100">
-        <p class="bg-primary">
-          Submit Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Ducimus dolorum similique nam eos maiores dicta ex quas natus
-          voluptate perspiciatis laborum voluptatem voluptatibus adipisci quis
-          eaque, minus dolorem ad autem. Recipe
-        </p>
+        <div class="abtPara">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="abtPara">
+          <p style="width: 600px; text-align: center">
+            Send us a message and we’ll get back to you as soon as possible. You
+            can also reach us by phone, see our location pages for each
+            location's direct phone number. We're looking forward to hearing
+            from you!
+          </p>
+        </div>
+        <div class="abtPara">
+          <div class="form-container">
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="John" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" value="oe" />
+              </div>
+              <div class="form-group">
+                <label for="loc">Which location are you contacting?:</label>
+                <input type="text" id="loc" name="loc" value="" />
+              </div>
+              <div class="form-group">
+                <label for="abt">What are you getting in touch about?:</label>
+                <input type="text" id="abt" name="abt" value="" />
+              </div>
+              <div class="form-group">
+                <label for="msg">Your Message:</label>
+                <input type="text" id="msg" name="msg" value="" />
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="abtPara">
+          <p>
+            This site is protected by reCAPTCHA and the Google Privacy Policy
+            and Terms of Service apply.
+          </p>
+        </div>
       </div>
     </div>
 
-    <script>
-      function showTab(event, tabId) {
-        event.preventDefault();
-        var tabContents = document.querySelectorAll(".tab-pane");
-        tabContents.forEach(function (tabContent) {
-          tabContent.classList.remove("show", "active");
-        });
-
-        var tabLinks = document.querySelectorAll(".nav-link");
-        tabLinks.forEach(function (tabLink) {
-          tabLink.classList.remove("active");
-        });
-
-        document.getElementById(tabId).classList.add("show", "active");
-        event.currentTarget.classList.add("active");
-      }
-    </script>
+    <script src="./recipe.js"></script>
   </body>
 </html>
